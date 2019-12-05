@@ -1,0 +1,110 @@
+.vc-toggle-container * {
+  font-family: Arial;
+  -webkit-transition: 0.15s ease-out;
+  -moz-transition: 0.15s ease-out;
+  -o-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
+}
+
+.vc-small-switch {
+  width: 53px;
+  height: 24px;
+}
+
+.vc-small-switch {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  padding: 3px;
+  border-radius: 18px;
+  cursor: pointer;
+}
+
+.vc-switch-input {
+  position: absolute;
+}
+
+.vc-switch-label {
+  position: relative;
+  display: block;
+  height: inherit;
+  font-size: 10px;
+  background: #d1d3d4;
+  border-radius: inherit;
+}
+
+.vc-switch-label:before,
+.vc-switch-label:after {
+  position: absolute;
+  top: 50%;
+  margin-top: -0.5em;
+  line-height: 1;
+}
+
+.vc-switch-label:before {
+  content: attr(data-off);
+  right: 11px;
+  color: white;
+}
+
+.vc-switch-label:after {
+  content: attr(data-on);
+  left: 11px;
+  color: white;
+  opacity: 0;
+}
+
+.vc-switch-input:checked ~ .vc-switch-label {
+  background: #38cf5b;
+}
+.vc-switch-input:checked ~ .vc-switch-label:before {
+  opacity: 0;
+}
+.vc-switch-input:checked ~ .vc-switch-label:after {
+  opacity: 1;
+}
+
+.vc-switch-handle {
+  position: absolute !important;
+  top: 7px;
+  left: 8px;
+  width: 15px;
+  height: 15px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.vc-switch-handle:before {
+  content: "";
+  top: 50%;
+  left: 50%;
+  position: absolute !important;
+  margin: -6px 0 0 -6px;
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+}
+
+.vc-switch-label:active ~ .vc-switch-handle {
+  width: 30px;
+}
+
+.vc-switch-input:not(:checked) ~ .vc-switch-handle {
+  left: 8px;
+}
+
+.vc-switch-input:checked ~ .vc-switch-handle {
+  left: unset;
+  right: 8px;
+}
+
+/*
+<div class="vc-toggle-container">
+  <label class="vc-small-switch">
+    <input type="checkbox"class="vc-switch-input">
+    <span class="vc-switch-label" data-on="Sim" data-off="Não"></span>
+    <span class="vc-switch-handle"></span>
+  </label>
+</div>
+*/
