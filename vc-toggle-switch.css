@@ -15,13 +15,13 @@
   position: relative;
   display: inline-block;
   vertical-align: top;
-  padding: 3px;
   border-radius: 18px;
   cursor: pointer;
 }
 
 .vc-switch-input {
   position: absolute;
+  transform: translate3d(5px, 5px, 0);
 }
 
 .vc-switch-label {
@@ -38,7 +38,7 @@
   position: absolute;
   top: 50%;
   margin-top: -0.5em;
-  line-height: 1;
+  line-height: 1.1;
 }
 
 .vc-switch-label:before {
@@ -66,8 +66,8 @@
 
 .vc-switch-handle {
   position: absolute !important;
-  top: 7px;
-  left: 8px;
+  top: 4px;
+  left: 5px;
   width: 15px;
   height: 15px;
   background: white;
@@ -86,25 +86,11 @@
   border-radius: 6px;
 }
 
-.vc-switch-label:active ~ .vc-switch-handle {
+.vc-switch-label:active ~ .vc-switch-handle, .vc-switch-handle:active {
   width: 30px;
-}
-
-.vc-switch-input:not(:checked) ~ .vc-switch-handle {
-  left: 8px;
 }
 
 .vc-switch-input:checked ~ .vc-switch-handle {
   left: unset;
-  right: 8px;
+  right: 5px;
 }
-
-/*
-<div class="vc-toggle-container">
-  <label class="vc-small-switch">
-    <input type="checkbox"class="vc-switch-input">
-    <span class="vc-switch-label" data-on="Sim" data-off="Não"></span>
-    <span class="vc-switch-handle"></span>
-  </label>
-</div>
-*/
