@@ -12,7 +12,7 @@
         CSS smooth toggle
       </span>
       <span class="text-light">
-        A Javascript mask by
+        A pure CSS toggle by
         <a
           target="_blank"
           class="text-light"
@@ -30,27 +30,74 @@
       </span>
     </nav>
 
-    <div class="text-center">
-      <span class="m-3 p-2 badge badge-dark">Small Toggle With Text</span>
+    <div class="text-center float-left">
+        <span class="m-3 p-2 badge badge-dark">Small Toggle With Text</span>
+        <div class="vc-toggle-container">
+          <label class="vc-small-switch">
+            <input type="checkbox" class="vc-switch-input" />
+            <span class="vc-switch-label" data-on="Yes" data-off="No"></span>
+            <span class="vc-handle vc-small"></span>
+          </label>
+        </div>
+      </div>
+  
+      <div class="text-center float-left">
+        <span class="m-3 p-2 badge badge-dark">Small Toggle Without Text</span>
+        <div class="vc-toggle-container">
+          <label class="vc-small-switch no-text">
+            <input type="checkbox" class="vc-switch-input" />
+            <span class="vc-switch-label"></span>
+            <span class="vc-handle vc-small"></span>
+          </label>
+        </div>
+      </div>
+    </body>
+
+    <div class="text-center float-left">
+      <span class="m-3 p-2 badge badge-dark">Medium Toggle With Text</span>
       <div class="vc-toggle-container">
-        <label class="vc-small-switch">
+        <label class="vc-medium-switch">
           <input type="checkbox" class="vc-switch-input" />
           <span class="vc-switch-label" data-on="Yes" data-off="No"></span>
-          <span class="vc-switch-handle"></span>
+          <span class="vc-handle vc-medium"></span>
         </label>
       </div>
     </div>
-    <div class="text-center">
-      <span class="m-3 p-2 badge badge-dark">Small Toggle Without Text</span>
+
+    <div class="text-center float-left">
+      <span class="m-3 p-2 badge badge-dark">Medium Toggle Without Text</span>
       <div class="vc-toggle-container">
-        <label class="vc-small-switch">
+        <label class="vc-medium-switch no-text">
           <input type="checkbox" class="vc-switch-input" />
-          <span class="vc-switch-label" data-on="Yes" data-off="No"></span>
-          <span class="vc-switch-handle"></span>
+          <span class="vc-switch-label"></span>
+          <span class="vc-handle vc-medium"></span>
         </label>
       </div>
     </div>
   </body>
+
+  <div class="text-center float-left">
+    <span class="m-3 p-2 badge badge-dark">Big Toggle With Text</span>
+    <div class="vc-toggle-container">
+      <label class="vc-big-switch">
+        <input type="checkbox" class="vc-switch-input" />
+        <span class="vc-switch-label" data-on="Yes" data-off="No"></span>
+        <span class="vc-handle vc-big"></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="text-center float-left">
+    <span class="m-3 p-2 badge badge-dark">Big Toggle Without Text</span>
+    <div class="vc-toggle-container">
+      <label class="vc-big-switch no-text">
+        <input type="checkbox" class="vc-switch-input" />
+        <span class="vc-switch-label"></span>
+        <span class="vc-handle vc-big"></span>
+      </label>
+    </div>
+  </div>
+</body>
 
   <!-- Adding Bootstrap-->
   <link

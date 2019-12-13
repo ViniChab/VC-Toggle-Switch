@@ -7,11 +7,33 @@
 }
 
 .vc-small-switch {
-  width: 53px;
-  height: 24px;
+  width: 50px;
+  height: 25px;
 }
 
-.vc-small-switch {
+.vc-small-switch.no-text {
+  width: 40px;
+}
+
+.vc-medium-switch {
+  width: 60px;
+  height: 30px;
+}
+
+.vc-medium-switch.no-text {
+  width: 50px;
+}
+
+.vc-big-switch {
+  width: 76px;
+  height: 38px;
+}
+
+.vc-big-switch.no-text {
+  width: 66px;
+}
+
+.vc-toggle-container label {
   position: relative;
   display: inline-block;
   vertical-align: top;
@@ -43,7 +65,7 @@
 
 .vc-switch-label:before {
   content: attr(data-off);
-  right: 11px;
+  right: 12px;
   color: white;
 }
 
@@ -64,18 +86,31 @@
   opacity: 1;
 }
 
-.vc-switch-handle {
+.vc-handle {
   position: absolute !important;
-  top: 4px;
+  top: 5px;
   left: 5px;
-  width: 15px;
-  height: 15px;
   background: white;
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
 
-.vc-switch-handle:before {
+.vc-handle.vc-small {
+  width: 15px;
+  height: 15px;
+}
+
+.vc-handle.vc-medium {
+  width: 20px;
+  height: 20px;
+}
+
+.vc-handle.vc-big {
+  width: 28px;
+  height: 28px;
+}
+
+.vc-handle:before {
   content: "";
   top: 50%;
   left: 50%;
@@ -86,11 +121,19 @@
   border-radius: 6px;
 }
 
-.vc-switch-label:active ~ .vc-switch-handle, .vc-switch-handle:active {
+.vc-switch-label:active ~ .vc-handle.vc-small, .vc-handle.vc-small:active {
   width: 30px;
 }
 
-.vc-switch-input:checked ~ .vc-switch-handle {
+.vc-switch-label:active ~ .vc-handle.vc-medium, .vc-handle.vc-medium:active {
+  width: 40px;
+}
+
+.vc-switch-label:active ~ .vc-handle.vc-big, .vc-handle.vc-big:active {
+  width: 56px;
+}
+
+.vc-switch-input:checked ~ .vc-handle {
   left: unset;
   right: 5px;
 }
