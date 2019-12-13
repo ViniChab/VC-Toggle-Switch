@@ -1,36 +1,81 @@
+:root {
+  /*Background color when it's turned off*/
+  --vc-off-color: #d1d3d4;
+
+  /*Background color when it's turned on*/
+  --vc-on-color: #38cf5b;
+  
+  /*Animation speed and type*/
+  --vc-animation-speed: 0.15s ease-out;
+
+  /*Font used by the text*/
+  --vc-font-family: Arial;
+  
+  /*Small switch width*/
+  --vc-width-small: 50px;
+
+  /*Small switch height*/
+  --vc-height-small: 25px;
+
+  /*Small switch without text width*/
+  --vc-width-no-text-small: 40px;
+
+  /*Medium switch width*/
+  --vc-width-medium: 60px;
+
+  /*Medium switch height*/
+  --vc-height-medium: 30px;
+
+  /*Medium switch without text width*/
+  --vc-width-no-text-medium: 50px;
+
+  /*Big switch width*/
+  --vc-width-big: 76px;
+
+  /*Big switch height*/
+  --vc-height-big: 38px;
+
+  /*Big switch without text width*/
+  --vc-width-no-text-big: 66px;
+
+  /*Border radius for the handle*/
+  --vc-border-radius: 20px;
+}
+
 .vc-toggle-container * {
-  font-family: Arial;
-  -webkit-transition: 0.15s ease-out;
-  -moz-transition: 0.15s ease-out;
-  -o-transition: 0.15s ease-out;
-  transition: 0.15s ease-out;
+  font-family: var(--vc-font-family);
+  font-size: var(--vc-font-size);
+  -webkit-transition: var(--vc-animation-speed);
+  -moz-transition: var(--vc-animation-speed);
+  -o-transition: var(--vc-animation-speed);
+  transition: var(--vc-animation-speed);
 }
 
 .vc-small-switch {
-  width: 50px;
-  height: 25px;
+  width: var(--vc-width-small);
+  height: var(--vc-height-small);
 }
 
 .vc-small-switch.no-text {
-  width: 40px;
+  width: var(--vc-width-no-text-small);
 }
 
 .vc-medium-switch {
-  width: 60px;
-  height: 30px;
+  width: var(--vc-width-medium);
+  height: var(--vc-height-medium);
 }
 
 .vc-medium-switch.no-text {
-  width: 50px;
+  width: var(--vc-width-no-text-medium);
 }
 
 .vc-big-switch {
-  width: 76px;
-  height: 38px;
+  width: var(--vc-width-big);
+  height: var(--vc-height-big);
 }
 
 .vc-big-switch.no-text {
-  width: 66px;
+  width: var(--vc-width-no-text-big);
 }
 
 .vc-toggle-container label {
@@ -51,7 +96,7 @@
   display: block;
   height: inherit;
   font-size: 10px;
-  background: #d1d3d4;
+  background: var(--vc-off-color);
   border-radius: inherit;
 }
 
@@ -65,19 +110,41 @@
 
 .vc-switch-label:before {
   content: attr(data-off);
-  right: 12px;
   color: white;
 }
 
 .vc-switch-label:after {
   content: attr(data-on);
-  left: 11px;
   color: white;
   opacity: 0;
 }
 
+.vc-switch-label.vc-small:before {
+  right: 12px;
+}
+
+.vc-switch-label.vc-small:after {
+  left: 11px;
+}
+
+.vc-switch-label.vc-medium:before {
+  right: 15px;
+}
+
+.vc-switch-label.vc-medium:after {
+  left: 14px;
+}
+
+.vc-switch-label.vc-big:before {
+  right: 20px;
+}
+
+.vc-switch-label.vc-big:after {
+  left: 18px;
+}
+
 .vc-switch-input:checked ~ .vc-switch-label {
-  background: #38cf5b;
+  background: var(--vc-on-color);
 }
 .vc-switch-input:checked ~ .vc-switch-label:before {
   opacity: 0;
@@ -91,7 +158,7 @@
   top: 5px;
   left: 5px;
   background: white;
-  border-radius: 20px;
+  border-radius: var(--vc-border-radius);
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
 
