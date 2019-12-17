@@ -10,42 +10,36 @@
 
   /*Font used by the text*/
   --vc-font-family: Arial;
+
+  /*The size used*/
+  --vc-font-size: 11px;
   
   /*Small switch width*/
-  --vc-width-small: 50px;
+  --vc-width: 50px;
 
   /*Small switch height*/
-  --vc-height-small: 25px;
+  --vc-height: 25px;
 
   /*Small switch without text width*/
-  --vc-width-no-text-small: 40px;
-
-  /*Medium switch width*/
-  --vc-width-medium: 60px;
-
-  /*Medium switch height*/
-  --vc-height-medium: 30px;
-
-  /*Medium switch without text width*/
-  --vc-width-no-text-medium: 50px;
-
-  /*Big switch width*/
-  --vc-width-big: 76px;
-
-  /*Big switch height*/
-  --vc-height-big: 38px;
-
-  /*Big switch without text width*/
-  --vc-width-no-text-big: 66px;
+  --vc-width-no-text: 40px;
 
   /*Border radius for the handle*/
-  --vc-border-radius: 20px;
-  
+  --vc-handle-border-radius: 20px;
+
+  /*Border radius for the box*/
+  --vc-box-border-radius: 18px;
+
   /*Shadow for the handle*/
   --vc-handle-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
   
   /*Handle color*/
   --vc-handle-color: white;
+
+  /*Handle width*/
+  --vc-handle-width: 15px;
+
+  /*Handle height*/
+  --vc-handle-height: 15px;
 }
 
 .vc-toggle-container * {
@@ -57,38 +51,20 @@
   transition: var(--vc-animation-speed);
 }
 
-.vc-small-switch {
-  width: var(--vc-width-small);
-  height: var(--vc-height-small);
+.vc-switch {
+  width: var(--vc-width);
+  height: var(--vc-height);
 }
 
-.vc-small-switch.no-text {
-  width: var(--vc-width-no-text-small);
-}
-
-.vc-medium-switch {
-  width: var(--vc-width-medium);
-  height: var(--vc-height-medium);
-}
-
-.vc-medium-switch.no-text {
-  width: var(--vc-width-no-text-medium);
-}
-
-.vc-big-switch {
-  width: var(--vc-width-big);
-  height: var(--vc-height-big);
-}
-
-.vc-big-switch.no-text {
-  width: var(--vc-width-no-text-big);
+.vc-switch.vc-no-text {
+  width: var(--vc-width-no-text);
 }
 
 .vc-toggle-container label {
   position: relative;
   display: inline-block;
   vertical-align: top;
-  border-radius: 18px;
+  border-radius: var(--vc-box-border-radius);
   cursor: pointer;
 }
 
@@ -125,36 +101,22 @@
   opacity: 0;
 }
 
-.vc-switch-label.vc-small:before {
+.vc-switch-label:before {
   right: 12px;
 }
 
-.vc-switch-label.vc-small:after {
+.vc-switch-label:after {
   left: 11px;
-}
-
-.vc-switch-label.vc-medium:before {
-  right: 15px;
-}
-
-.vc-switch-label.vc-medium:after {
-  left: 14px;
-}
-
-.vc-switch-label.vc-big:before {
-  right: 20px;
-}
-
-.vc-switch-label.vc-big:after {
-  left: 18px;
 }
 
 .vc-switch-input:checked ~ .vc-switch-label {
   background: var(--vc-on-color);
 }
+
 .vc-switch-input:checked ~ .vc-switch-label:before {
   opacity: 0;
 }
+
 .vc-switch-input:checked ~ .vc-switch-label:after {
   opacity: 1;
 }
@@ -164,23 +126,13 @@
   top: 5px;
   left: 5px;
   background: var(--vc-handle-color);
-  border-radius: var(--vc-border-radius);
+  border-radius: var(--vc-handle-border-radius);
   box-shadow: var(--vc-handle-shadow);
 }
 
-.vc-handle.vc-small {
-  width: 15px;
-  height: 15px;
-}
-
-.vc-handle.vc-medium {
-  width: 20px;
-  height: 20px;
-}
-
-.vc-handle.vc-big {
-  width: 28px;
-  height: 28px;
+.vc-handle {
+  width: var(--vc-handle-width);
+  height: var(--vc-handle-height);
 }
 
 .vc-handle:before {
@@ -194,16 +146,8 @@
   border-radius: 6px;
 }
 
-.vc-switch-label:active ~ .vc-handle.vc-small, .vc-handle.vc-small:active {
+.vc-switch-label:active ~ .vc-handle, .vc-handle:active {
   width: 30px;
-}
-
-.vc-switch-label:active ~ .vc-handle.vc-medium, .vc-handle.vc-medium:active {
-  width: 40px;
-}
-
-.vc-switch-label:active ~ .vc-handle.vc-big, .vc-handle.vc-big:active {
-  width: 56px;
 }
 
 .vc-switch-input:checked ~ .vc-handle {
