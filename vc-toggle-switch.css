@@ -40,6 +40,12 @@
 
   /*Border radius for the handle*/
   --vc-border-radius: 20px;
+  
+  /*Shadow for the handle*/
+  --vc-handle-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  
+  /*Handle color*/
+  --vc-handle-color: white;
 }
 
 .vc-toggle-container * {
@@ -157,9 +163,9 @@
   position: absolute !important;
   top: 5px;
   left: 5px;
-  background: white;
+  background: var(--vc-handle-color);
   border-radius: var(--vc-border-radius);
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--vc-handle-shadow);
 }
 
 .vc-handle.vc-small {
