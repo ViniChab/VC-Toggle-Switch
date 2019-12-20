@@ -52,6 +52,84 @@
           </label>
         </div>
       </div>
+    
+      <div class="text-center d-inline-block">
+        <span class="m-3 p-2 badge badge-dark">Red Toggle With Text</span>
+        <div class="vc-toggle-container">
+          <label class="vc-switch">
+            <input type="checkbox" class="vc-switch-input" />
+            <span 
+              style="--vc-off-color: red"
+              data-on="Yes" 
+              data-off="No"
+              class="vc-switch-label"
+            ></span>
+            <span class="vc-handle"></span>
+          </label>
+        </div>
+      </div>
+
+      <div class="text-center d-inline-block">
+        <span class="m-3 p-2 badge badge-dark">Blue Toggle With Red Text</span>
+        <div class="vc-toggle-container">
+          <label class="vc-switch">
+            <input type="checkbox" class="vc-switch-input" />
+            <span 
+              style="
+                --vc-off-color: blue;
+                --vc-on-color: blue;
+                --vc-on-font-color: red;
+                --vc-off-font-color: red;
+              "
+              data-on="Yes" 
+              data-off="No"
+              class="vc-switch-label"
+            ></span>
+            <span class="vc-handle"></span>
+          </label>
+        </div>
+      </div>
+
+      <div
+        style="
+          --vc-animation-speed: 0;
+          --vc-box-border-radius: 0
+        "
+        class="text-center d-inline-block"
+      >
+        <span class="m-3 p-2 badge badge-dark">Square Toggle Without Animation</span>
+        <div class="vc-toggle-container">
+          <label class="vc-switch vc-no-text">
+            <input type="checkbox" class="vc-switch-input" />
+            <span class="vc-switch-label" ></span>
+            <span class="vc-handle"></span>
+          </label>
+        </div>
+      </div>
+
+      <div class="text-center d-inline-block">
+        <span class="m-3 p-2 badge badge-dark">If Your Designer Goes Insane</span>
+        <div class="vc-toggle-container">
+          <label class="vc-switch">
+            <input type="checkbox" class="vc-switch-input" />
+            <span 
+              style="
+                --vc-off-color: linear-gradient(to right, blue , green, red);
+                --vc-on-color: linear-gradient( purple , pink, black);
+                --vc-on-font-color: rgb(255, 166, 0);
+                --vc-off-font-color: rgb(0, 60, 255);
+              "
+              data-on="Yes" 
+              data-off="No"
+              class="vc-switch-label"
+            ></span>
+            <span 
+              style="--vc-handle-color: orange"
+              class="vc-handle"
+            ></span>
+          </label>
+        </div>
+      </div>
     </div>
   </body>
 

@@ -14,6 +14,12 @@
   /*The size used*/
   --vc-font-size: 11px;
   
+  /*Font color when the switch is on*/
+  --vc-on-font-color: white;
+
+  /*Font color when the switch is off*/
+  --vc-off-font-color: white;
+
   /*Small switch width*/
   --vc-width: 50px;
 
@@ -92,12 +98,12 @@
 
 .vc-switch-label:before {
   content: attr(data-off);
-  color: white;
+  color: var(--vc-on-font-color);
 }
 
 .vc-switch-label:after {
   content: attr(data-on);
-  color: white;
+  color: var(--vc-off-font-color);
   opacity: 0;
 }
 
