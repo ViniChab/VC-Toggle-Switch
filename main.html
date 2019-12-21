@@ -42,10 +42,10 @@
         </div>
       </div>
     
-      <div class="text-center d-inline-block">
+      <div style="--vc-width: 40px;" class="text-center d-inline-block">
         <span class="m-3 p-2 badge badge-dark">Default Toggle Without Text</span>
         <div class="vc-toggle-container">
-          <label class="vc-switch vc-no-text">
+          <label class="vc-switch-input">
             <input type="checkbox" class="vc-switch-input" />
             <span class="vc-switch-label"></span>
             <span class="vc-handle"></span>
@@ -93,13 +93,16 @@
       <div
         style="
           --vc-animation-speed: 0;
-          --vc-box-border-radius: 0
+          --vc-box-border-radius: 0;
+          --vc-handle-border-radius: 0;
+          --vc-onclick-width: 15px;
+          --vc-width: 40px;
         "
         class="text-center d-inline-block"
       >
         <span class="m-3 p-2 badge badge-dark">Square Toggle Without Animation</span>
         <div class="vc-toggle-container">
-          <label class="vc-switch vc-no-text">
+          <label class="vc-switch-input">
             <input type="checkbox" class="vc-switch-input" />
             <span class="vc-switch-label" ></span>
             <span class="vc-handle"></span>
@@ -118,6 +121,29 @@
         class="text-center d-inline-block"
       >
         <span class="m-3 p-2 badge badge-dark">If Your Designer Goes Insane</span>
+        <div class="vc-toggle-container">
+          <label class="vc-switch">
+            <input type="checkbox" class="vc-switch-input" />
+            <span data-on="Yes" data-off="No" class="vc-switch-label"></span>
+            <span class="vc-handle"
+            ></span>
+          </label>
+        </div>
+      </div>
+
+      <div 
+        style="
+          --vc-width: 60px;
+          --vc-height: 30px;
+          --vc-handle-width: 20px;
+          --vc-handle-height: 20px;
+          --vc-onclick-width: 50px;
+          --vc-font-size: 13px;
+          --vc-font-weight: 900;
+        "
+        class="text-center d-inline-block"
+      >
+        <span class="m-3 p-2 badge badge-dark">Very Smooth Medium Toggle</span>
         <div class="vc-toggle-container">
           <label class="vc-switch">
             <input type="checkbox" class="vc-switch-input" />

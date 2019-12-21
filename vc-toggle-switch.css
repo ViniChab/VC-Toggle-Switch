@@ -13,6 +13,9 @@
 
   /*The size used*/
   --vc-font-size: 11px;
+
+  /*The font weight*/
+  --vc-font-weight: 300;
   
   /*Font color when the switch is on*/
   --vc-on-font-color: white;
@@ -20,14 +23,17 @@
   /*Font color when the switch is off*/
   --vc-off-font-color: white;
 
+  /*How far the OFF text is from the right side*/
+  --vc-label-position-off: 12px;
+
+  /*How far the ON text is from the left side*/
+  --vc-label-position-on: 11px;
+
   /*Small switch width*/
   --vc-width: 50px;
 
   /*Small switch height*/
   --vc-height: 25px;
-
-  /*Small switch without text width*/
-  --vc-width-no-text: 40px;
 
   /*Border radius for the handle*/
   --vc-handle-border-radius: 20px;
@@ -46,11 +52,13 @@
 
   /*Handle height*/
   --vc-handle-height: 15px;
+
+  /*The handle's width while the toggle is clicked*/
+  --vc-onclick-width: 30px;
 }
 
 .vc-toggle-container * {
   font-family: var(--vc-font-family);
-  font-size: var(--vc-font-size);
   -webkit-transition: var(--vc-animation-speed);
   -moz-transition: var(--vc-animation-speed);
   -o-transition: var(--vc-animation-speed);
@@ -60,10 +68,6 @@
 .vc-switch {
   width: var(--vc-width);
   height: var(--vc-height);
-}
-
-.vc-switch.vc-no-text {
-  width: var(--vc-width-no-text);
 }
 
 .vc-toggle-container label {
@@ -83,7 +87,8 @@
   position: relative;
   display: block;
   height: inherit;
-  font-size: 10px;
+  font-size: var(--vc-font-size);
+  font-weight: var(--vc-font-weight);
   background: var(--vc-off-color);
   border-radius: inherit;
 }
@@ -108,11 +113,11 @@
 }
 
 .vc-switch-label:before {
-  right: 12px;
+  right: var(--vc-label-position-off);;
 }
 
 .vc-switch-label:after {
-  left: 11px;
+  left: var(--vc-label-position-on);;
 }
 
 .vc-switch-input:checked ~ .vc-switch-label {
@@ -153,7 +158,7 @@
 }
 
 .vc-switch-label:active ~ .vc-handle, .vc-handle:active {
-  width: 30px;
+  width: var(--vc-onclick-width);
 }
 
 .vc-switch-input:checked ~ .vc-handle {
