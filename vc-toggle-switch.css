@@ -55,6 +55,9 @@
 
   /*The handle's width while the toggle is clicked*/
   --vc-onclick-width: 30px;
+
+  /*Hadle's distance from the top*/
+  --vc-handle-top: 5px;
 }
 
 .vc-toggle-container * {
@@ -134,7 +137,7 @@
 
 .vc-handle {
   position: absolute !important;
-  top: 5px;
+  top: var(--vc-handle-top);
   left: 5px;
   background: var(--vc-handle-color);
   border-radius: var(--vc-handle-border-radius);
