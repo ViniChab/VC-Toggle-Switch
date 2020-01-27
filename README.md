@@ -58,64 +58,64 @@ Which properties can I change?
 ===================================
 
 - Background color when it's turned off
-  --vc-off-color
+    --vc-off-color
 
 - Background color when it's turned on
-  --vc-on-color
+    --vc-on-color
   
 - Animation speed and type
-  --vc-animation-speed
+    --vc-animation-speed
 
 - Font used by the text
-  --vc-font-family
+    --vc-font-family
 
 - The size used
-  --vc-font-size
+    --vc-font-size
 
 - The font weight
-  --vc-font-weight
+    --vc-font-weight
   
 - Font color when the switch is on
-  --vc-on-font-color
+    --vc-on-font-color
 
 - Font color when the switch is off
-  --vc-off-font-color
+    --vc-off-font-color
 
 - How far the OFF text is from the right side
-  --vc-label-position-off
+    --vc-label-position-off
 
 - How far the ON text is from the left side
-  --vc-label-position-on
+    --vc-label-position-on
 
 - Small switch width
-  --vc-width
+    --vc-width
 
 - Small switch height
-  --vc-height
+    --vc-height
 
 - Border radius for the handle
-  --vc-handle-border-radius
+    --vc-handle-border-radius
 
 - Border radius for the box
-  --vc-box-border-radius
+    --vc-box-border-radius
 
 - Shadow for the handle
-  --vc-handle-shadow
+    --vc-handle-shadow
   
 - Handle color
-  --vc-handle-color
+    --vc-handle-color
 
 - Handle width
-  --vc-handle-width
+    --vc-handle-width
 
 - Handle height
-  --vc-handle-height
+    --vc-handle-height
 
 - The handle's width while the toggle is clicked
-  --vc-onclick-width
+    --vc-onclick-width
 
 - Hadle's distance from the top
-  --vc-handle-top
+    --vc-handle-top
 
 You can find every property being used in the `vc-toggle-switch.css` file.
 
