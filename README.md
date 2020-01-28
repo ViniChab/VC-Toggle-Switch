@@ -1,4 +1,4 @@
-What is VC-toggle?
+What is VC-Toggle-Switch?
 ===================================
 
 This is a little toggle I made that is completely independent of framework. It is highly customizable, and will look good within any app.
