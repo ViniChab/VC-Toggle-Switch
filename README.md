@@ -1,4 +1,4 @@
-What is this?
+What is VC-toggle?
 ===================================
 
 This is a little toggle I made that is completely independent of framework. It is highly customizable, and will look good within any app.
@@ -6,12 +6,12 @@ This is a little toggle I made that is completely independent of framework. It i
 Why should I use this?
 ===================================
 
-I made this so I could use it inside an AngularJS (1.0.0) app, and I think your reasons should be the same: you're looking for somethiing that will work anywhere, and that looks good.
+I made this so I could use it inside an AngularJS (1.0.0) app, and I think your reasons should be the same: you're looking for something that will work anywhere, and that looks good.
 
 How do I use this?
 ===================================
 
-This toggle was made in a way that you won't need much (or any) CSS to adapt it to your website. It also should be very plug'n play. This is an easy example of its implementation:
+This toggle was made in a way that you won't need much (or any) CSS to adapt it into your app. It also should be very plug'n play. This is an easy example of its implementation:
 
     <div class="vc-toggle-container">
       <label class="vc-switch">
@@ -166,10 +166,9 @@ If you want to take a look at some working examples, you can check it here: http
 
 And if you want to play with it a little bit, take a look here: https://stackblitz.com/edit/vc-toggle?file=index.html
 
-Note: Stackbitz is a little funky, and I couldn't make it load the CSS as an import. I recommend you downloading the project and playing a bit on yout own machine.
+Note: Stackblitz is a little funky, and I couldn't make it load the CSS as an import. I recommend you downloading the project and playing a bit on yout own machine.
 
 That's all, folks!
-
 ===================================
 
 Please, take a moment to connect with me on Linkedin: https://www.linkedin.com/in/vinícius-chab/, and have a great day!
