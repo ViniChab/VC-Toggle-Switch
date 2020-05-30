@@ -3,7 +3,7 @@ What is VC-Toggle-Switch?
 
 This is a little toggle I made that is completely independent of framework. It is highly customizable, and will look good within any app.
 
-Why should I use this?
+Why?
 ===================================
 
 I made this so I could use it inside an AngularJS (1.0.0) app, and I think your reasons should be the same: you're looking for something that will work anywhere, and that looks good.
