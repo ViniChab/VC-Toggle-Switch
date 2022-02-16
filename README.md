@@ -170,9 +170,8 @@ Note: Stackblitz is a little funky, and I couldn't make it load the CSS as an im
 
 That's all, folks!
 ===================================
-
-Please, take a moment to connect with me on Linkedin: https://www.linkedin.com/in/vinícius-chab/, and have a great day!
+Please, take a moment to connect with me on Linkedin: https://linkedin.com/in/vinicius-chab/, and have a great day!
 
 License
 ===================================
-MIT - Vinícius S. Chab
+MIT - Vinícius Chab
